@@ -1,0 +1,66 @@
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+import java.sql.*;
+import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+ 
+public class AddSession {
+    public static void main (String[] args) throws SQLException {
+        Scanner scanner=new Scanner(System.in);
+                 
+                Connection conn = null; 
+        try {
+            conn = DriverManager.getConnection("jdbc:derby://localhost:1527/Project1","toneve","12345");
+        } catch (SQLException ex) {
+            Logger.getLogger(AddSession.class.getName()).log(Level.SEVERE, null, ex);
+        }
+                System.out.println("Connection to database was successfully established !");
+                Statement st = conn.createStatement();
+ 
+                System.out.println("Enter session id: ");
+                int idid = scanner.nextInt();
+                System.out.println("Enter name: ");
+                String name=scanner.next();
+                System.out.println("Enter day: ");
+                String day=scanner.next();
+                System.out.println("Enter hour: ");
+                int hour=scanner.nextInt();
+                System.out.println("Instructor: ?");
+                String instructor=scanner.next();
+                 
+                st.executeUpdate("INSERT INTO AddSession VALUES('"+idid+"', '"+name+"', '"+day+"', '"+hour+"',  '"+instructor+"')");
+                System.out.println("All values were successfully added to the database !"); 
+    }    
+}

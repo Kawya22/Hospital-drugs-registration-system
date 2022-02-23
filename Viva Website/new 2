@@ -1,0 +1,29 @@
+'#include<stdio.h>\r\n
+#include<dos.h>\r\n
+#include<ctype.h>\r\n
+#include<string.h>\r\n
+#include<conio.h>\r\n
+#include<stdlib.h>\r\nxp[20],yp[20];
+\r\nvoid bar(int z)\r\n{\r\n\twindow(z+1,22,70,25);
+\r\n\ttextcolor(10);
+\r\n\tcprintf("    \xdb  ");
+\r\n\twindow(z+1,23,70,25);
+\r\n\tcprintf("   \xde");\r\n\ttextcolor(9);
+\r\n\tcprintf("\xdb");
+\r\n\ttextcolor(10);
+\r\n\tcprintf("\xdd  ");
+\r\n\twindow(z+1,24,70,25);
+\r\n\tcprintf("  \xde");
+\r\n\ttextcolor(9);
+\r\n\tcprintf("\xdb\xdf\xdb");
+\r\n\ttextcolor(10);
+\r\n\tcprintf("\xdd  ");
+\r\n}\r\nconst int sz=6;
+\r\nint xx[sz],yy[sz];
+\r\nvoid up()\r\n{\r\n\tint flag=0,k;
+\r\n\tstatic scr=0;
+\r\n\tfor(int i=0;
+i<sz && xx[i]!=0 ;
+i++)\r\n\t{\r\n\t\tfor(k=0;k<20 ;k++)\r\n\t\t{\r\n\t\t\tif(xx[i]==xp[k] && yy[i]==yp[k]&& xp[k]!=0)\r\n\t\t\t{\r\n\t\t\t\txx[i]=0;
+\r\n\t\t\t\twindow(74,20,80,24);\r\n\t\t\t\tscr++;\r\n\t\t\t\ttextcolor(15);\r\n\t\t\t\tcprintf("%d",scr);\r\n\t\t\t\tif(scr<10)\r\n\t\t\t\tcprintf("  ");\r\n\t\t\t\telse cprintf(" ");\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n\ttextcolor(10);\r\n\tfor(i=0;i<20;i++)\r\n\t{\r\n\t\tif(xp[i]!=0)\r\n\t\t{\r\n\t\t\tflag++;\r\n\t\t\twindow(xp[i],yp[i],xp[i]+1,yp[i]+1);\r\n\t\t\tif(yp[i]!=1)\r\n\t\t\tcprintf("%c",4);\r\n\t\t\twindow(xp[i],yp[i]+1,xp[i]+1,yp[i]+2);\r\n\t\t\tif(yp[i]!=21)\r\n\t\t\tcprintf(" ");\r\n\t\t\typ[i]--;\r\n\t\t\tdelay(22/flag);\r\n\t\t}\r\n\t\tif(yp[i]==0)\r\n\t\t\txp[i]=0;\r\n\t}\r\n\ttextcolor(WHITE);\r\n}\r\nvoid status(int x)\r\n{\r\n\twindow(66,17,79,19);\r\n\tif(x==1)\r\n\t{\r\n\ttextcolor(LIGHTGREEN);\r\n\tcprintf("  Playing.. ");\r\n\t}\r\n\telse if(x==2)\r\n\tcprintf("   Paused   ");\r\n\telse\r\n\t{\r\n\ttextcolor(LIGHTRED);\r\n\tcprintf("   Stoped   ");\r\n\t}\r\n}\r\nvoid down()\r\n{\r\n\tint x,i;\r\n\tif(random(10)==1){\r\n\tx=random(52)+7;
+\r\n\ttextcolor(12);\r\n\tfor(i=0;i<sz;i++)\r\n\t{\r\n\t\tif(xx[i]==0)\r\n\t\t{\r\n\t\t\txx[i]=x;\r\n\t\t\tyy[i]=2;\r\n\t\t\twindow(xx[i],yy[i],xx[i]+1,yy[i]+1);\r\n\t\t\tcprintf("*");\r\n\t\t\tbreak;\r\n\t\t}\r\n\t}             /// after\r\n\tfor(i=0;i<sz;i++)\r\n\t{\r\n\t\tif(random(2)){\r\n\t\twindow(xx[i],yy[i],xx[i],yy[i]+2);\r\n\t\tcprintf("+#");\r\n\t\tif(yy[i]>=20)\r\n\t\t{\r\n\t\t\tstatus(3);\r\n\t\t\tsound(100);\r\n\t\t\tdelay(210);\r\n\t\t\tnosound();\r\n\t\t\tsound(250);\r\n\t\t\tdelay(100);\r\n\t\t\tnosound();\r\n\t\t\tsound(100);\r\n\t\t\tdelay(210);\r\n\t\t\tnosound();\r\n\t\t\tsound(250);\r\n\t\t\tdelay(250);\r\n\t\t\tnosound();\r\n\r\n\t\t\tgetch();\r\n\t\t\tdelay(1500);\r\n\t\t\texit(0);\r\n\t\t}\r\n\t\tyy[i]++;      }\r\n\t}\r\n\ttextcolor(WHITE);\r\n\tdelay(300);\r\n\t}\r\n}\r\nvoid main()\r\n{\r\n\tclrscr();\r\n\tchar ch;\r\n\t_setcursortype(_NOCURSOR);\r\n\trandomize();\r\n\ttextcolor(15);\r\n\tcprintf("\\n \xda                                                             \xda\xc4\xc4\xc4\xc4\xc4\xc4\xc4\xc4\xc4\xc4\xc4\xc4\xc4\xc4\xbf ");\r\n\tfor(int i=0;i<18;i++)\r\n\tcprintf(" \xb3                                                             \xb3              \xb3 ");\r\n\tcprintf(" \xc0                                                             \xc0\xc4\xc4\xc4\xc4\xc4\xc4\xc4\xc4\xc4\xc4\xc4\xc4\xc4\xc4\xd9 ");\r\n\twindow(66,3,78,21);\r\n\ttextcolor(11);\r\n\tcprintf("Press X      ");\r\n\tcprintf("to Exit_____ \\n");\r\n\ttextcolor(14);\r\n\tcprintf("Press P to   ");\r\n\tcprintf("Pause Game__ \\n");\r\n\ttextcolor(11);\r\n\tcprintf("Press Space  ");\r\n\tcprintf("to Shoot____ \\n");\r\n\ttextcolor(14);\r\n\tcprintf("Press Left,  ");\r\n\tcprintf("Right to Move\\n");\r\n\ttextcolor(WHITE);\r\n\tcprintf("\xc4\xc4\xc4\xc4\xc4\xc4\xc4\xc4\xc4\xc4\xc4\xc4 ");\r\n\tcprintf("Status:      ");\r\n\tcprintf("   Stoped    \\n");  // cprintf("  Playing.. "); cprintf("   Stoped   ");\r\n\tcprintf("Score :      ");\r\n\tcprintf("        0   ");\r\n//\tgetch(); return;\r\n\tint x=0;\r\n\tfor(i=0;i<20;i++)\r\n\t{\r\n\t\txp[i]=0;\r\n\t}\r\n\tfor(i=0;i<sz;i++)\r\n\t\txx[i]=0;\r\n\tbar(x);\r\n\r\n\twhile(1)\r\n\t{\r\n\t\tstatus(1);\r\n\t\twhile(!kbhit())\r\n\t\t{\r\n\t\t\tup();\r\n\t\t\tdown();\r\n\t\t}\r\n\t\tch=getch();\r\n\t\tswitch(tolower(ch))\r\n\t\t{\r\n\t\t\tcase \'p\' :  status(2);\r\n\t\t\t\t\t\tsound(1500);\r\n\t\t\t\t\t\tdelay(110);\r\n\t\t\t\t\t\tnosound();\r\n\t\t\t\t\t\tsound(500);\r\n\t\t\t\t\t\tdelay(200);\r\n\t\t\t\t\t\tnosound();\r\n\t\t\t\t\t\tsound(2200);\r\n\t\t\t\t\t\tdelay(150);\r\n\t\t\t\t\t\tnosound();\r\n\t\t\t\t\t\tgetch();\r\n\t\t\tcase \' \' :  sound(600);\r\n\t\t\t\t\t\tdelay(40);\r\n\t\t\t\t\t\tnosound();\r\n\t\t\t\t\t\tsound(1500);\r\n\t\t\t\t\t\tdelay(40);\r\n\t\t\t\t\t\tnosound();\r\n\t\t\t\t\t\tfor(i=0;i<20;i++)\r\n\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\tif(xp[i]==0)\r\n\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\txp[i]=x+5;\r\n\t\t\t\t\t\t\t\typ[i]=21;\r\n\t\t\t\t\t\t\t\tbreak;\r\n\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t\tbreak;\r\n\t\t\tcase 0 : \tch=getch();\r\n\t\t\t\t\t\tif(ch==75 && x>0)\r\n\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\tx-=1;\r\n\t\t\t\t\t\t\tbar(x);\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t\telse if(ch==77 && x<55)\r\n\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\tx+=1;\r\n\t\t\t\t\t\t\tbar(x);\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t\tbreak;\r\n\t\t\tcase \'x\' : return;\r\n\t\t}\r\n\t}\r\n}'

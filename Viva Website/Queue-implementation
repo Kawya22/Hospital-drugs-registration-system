@@ -1,0 +1,71 @@
+#-----------------------------Queue Implementation-------------------------------------
+class Node:
+    def __init__(self, value):
+        self.data = value
+        self.interest = None
+        self.total = None
+        self.next = None
+        #print("a node is created with the value {0}".format(value))
+
+class Queue:
+    def __init__(self):       
+        self.front = None
+        self.rear = None
+        #print("-----new queue is created-----")
+
+    def insert_end(self, new):
+         #print("Value {0} is inserted".format(new.data))
+         if self.front is None:
+            self.front = new
+            self.rear = new
+            return
+         self.rear.next = new
+         self.rear = new
+          
+
+    			
+    def cal_Interest(self):
+        if self.front is None:
+            print("queue is empty")
+            return
+        else:  
+            n = self.front   #n is the node
+            for i in range(15):
+                data=n.data
+                n.interest=data*0.15
+                #print("Amount = ", n.data , " Interest = " , n.interest)
+                n = n.next
+            while n is not None:
+                data=n.data
+                n.interest=data*0.10
+                #print("Amount = ", n.data , " Interest = " , n.interest)
+                n = n.next
+
+
+                
+    def cal_Total(self):
+        print("---Total amount for each FD---")
+        if self.front is None:
+            print("queue is empty")
+            return
+        else:
+            n = self.front
+            while n is not None:
+                n.total= n.data + n.interest
+                print("Amount = ", n.data , " Total =", n.total)
+                n = n.next
+
+  
+#-----------------------------Interface-------------------------------------
+print("-----------Welcome to the bank system----------------")
+q = Queue()
+num=int(input("Enter number of customers (Must be greater than 15): "))
+
+for i in range(num):
+	a= float(input("Amount of FD :"))
+	new_node = Node(a)
+	q.insert_end(new_node)
+
+q.cal_Interest()
+
+q.cal_Total()

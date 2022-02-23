@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\DrugsRegister",
+    "\\DrugsRegister\\bin",
+    "\\DrugsRegister\\bin\\Debug",
+    "\\DrugsRegister\\bin\\Release",
+    "\\DrugsRegister\\obj",
+    "\\DrugsRegister\\obj\\Debug",
+    "\\DrugsRegister\\obj\\Release",
+    "\\DrugsRegister\\Properties",
+    "\\DrugsRegister\\Resources"
+  ],
+  "SelectedNode": "\\DrugsRegister\\Program.cs",
+  "PreviewInSolutionExplorer": false
+}

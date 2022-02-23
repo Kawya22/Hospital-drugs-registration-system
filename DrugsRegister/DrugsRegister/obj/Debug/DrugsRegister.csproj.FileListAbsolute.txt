@@ -1,0 +1,54 @@
+C:\Users\User\Desktop\Hospital project\Software\DrugsRegister\DrugsRegister\bin\Debug\DrugsRegister.exe.config
+C:\Users\User\Desktop\Hospital project\Software\DrugsRegister\DrugsRegister\bin\Debug\DrugsRegister.exe
+C:\Users\User\Desktop\Hospital project\Software\DrugsRegister\DrugsRegister\bin\Debug\DrugsRegister.pdb
+C:\Users\User\Desktop\Hospital project\Software\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.Properties.Resources.resources
+C:\Users\User\Desktop\Hospital project\Software\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.StartPage.resources
+C:\Users\User\Desktop\Hospital project\Software\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Hospital project\Software\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Hospital project\Software\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.exe
+C:\Users\User\Desktop\Hospital project\Software\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.pdb
+C:\Users\User\Desktop\Hospital project\Software\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.Home.resources
+C:\Users\User\Desktop\Hospital project\Software\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.AddItem.resources
+C:\Users\User\Desktop\Hospital project\Software\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.Consumable.resources
+C:\Users\User\Desktop\Hospital project\Software\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.Drugs.resources
+C:\Users\User\Desktop\Hospital project\Software\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.LocalPurchases.resources
+C:\Users\User\Desktop\Hospital project\Software\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.OralIssues.resources
+C:\Users\User\Desktop\Hospital project\Software\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.Dispensary.resources
+C:\Users\User\Desktop\Hospital project\Software\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.Dressing.resources
+C:\Users\User\Desktop\Hospital project\Software\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.Ether_Spirit.resources
+C:\Users\User\Desktop\Hospital project\Software\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.IVFluids.resources
+C:\Users\User\Desktop\Hospital project\Software\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.IVInjection.resources
+C:\Users\User\Desktop\Hospital project\Software\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.SpecialIssues.resources
+C:\Users\User\Desktop\Hospital project\Software\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.Surgical_Consumable.resources
+C:\Users\User\Desktop\Hospital project\Software\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.Surgical_Gloves.resources
+C:\Users\User\Desktop\Hospital project\Software\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.WeeklyIssues.resources
+C:\Users\User\Desktop\Hospital project\Software\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.Special_Note.resources
+C:\Users\User\Desktop\Hospital project\Software\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.Summery.resources
+C:\Users\User\Desktop\Hospital project\Software\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.csprojAssemblyReference.cache
+E:\Document\Hospital project\Hospital Drug Register\DrugsRegister\DrugsRegister\bin\Debug\DrugsRegister.exe.config
+E:\Document\Hospital project\Hospital Drug Register\DrugsRegister\DrugsRegister\bin\Debug\DrugsRegister.exe
+E:\Document\Hospital project\Hospital Drug Register\DrugsRegister\DrugsRegister\bin\Debug\DrugsRegister.pdb
+E:\Document\Hospital project\Hospital Drug Register\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.csprojAssemblyReference.cache
+E:\Document\Hospital project\Hospital Drug Register\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.AddItem.resources
+E:\Document\Hospital project\Hospital Drug Register\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.Consumable.resources
+E:\Document\Hospital project\Hospital Drug Register\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.Dispensary.resources
+E:\Document\Hospital project\Hospital Drug Register\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.Dressing.resources
+E:\Document\Hospital project\Hospital Drug Register\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.Drugs.resources
+E:\Document\Hospital project\Hospital Drug Register\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.Ether_Spirit.resources
+E:\Document\Hospital project\Hospital Drug Register\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.Home.resources
+E:\Document\Hospital project\Hospital Drug Register\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.IVFluids.resources
+E:\Document\Hospital project\Hospital Drug Register\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.IVInjection.resources
+E:\Document\Hospital project\Hospital Drug Register\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.LocalPurchases.resources
+E:\Document\Hospital project\Hospital Drug Register\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.OralIssues.resources
+E:\Document\Hospital project\Hospital Drug Register\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.Properties.Resources.resources
+E:\Document\Hospital project\Hospital Drug Register\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.Special_Note.resources
+E:\Document\Hospital project\Hospital Drug Register\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.SpecialIssues.resources
+E:\Document\Hospital project\Hospital Drug Register\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.StartPage.resources
+E:\Document\Hospital project\Hospital Drug Register\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.Summery.resources
+E:\Document\Hospital project\Hospital Drug Register\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.Surgical_Consumable.resources
+E:\Document\Hospital project\Hospital Drug Register\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.Surgical_Gloves.resources
+E:\Document\Hospital project\Hospital Drug Register\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.WeeklyIssues.resources
+E:\Document\Hospital project\Hospital Drug Register\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.csproj.GenerateResource.cache
+E:\Document\Hospital project\Hospital Drug Register\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.csproj.CoreCompileInputs.cache
+E:\Document\Hospital project\Hospital Drug Register\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.exe
+E:\Document\Hospital project\Hospital Drug Register\DrugsRegister\DrugsRegister\obj\Debug\DrugsRegister.pdb

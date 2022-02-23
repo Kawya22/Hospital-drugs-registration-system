@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E81E52F0-390F-4F4D-A93E-E517E2A6FA3D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DrugsRegister</RootNamespace>
+    <AssemblyName>DrugsRegister</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddItem.Designer.cs">
+      <DependentUpon>AddItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consumable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consumable.Designer.cs">
+      <DependentUpon>Consumable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dispensary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dispensary.Designer.cs">
+      <DependentUpon>Dispensary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dressing.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dressing.Designer.cs">
+      <DependentUpon>Dressing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Drugs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Drugs.Designer.cs">
+      <DependentUpon>Drugs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ether Spirit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ether Spirit.Designer.cs">
+      <DependentUpon>Ether Spirit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalFinalDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HospitalFinalDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalFinalDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HospitalFinalDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalFinalDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HospitalFinalDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalFinalDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HospitalFinalDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IVFluids.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IVFluids.Designer.cs">
+      <DependentUpon>IVFluids.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IVInjection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IVInjection.Designer.cs">
+      <DependentUpon>IVInjection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocalPurchases.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LocalPurchases.Designer.cs">
+      <DependentUpon>LocalPurchases.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OralIssues.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OralIssues.Designer.cs">
+      <DependentUpon>OralIssues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Special Note.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Special Note.Designer.cs">
+      <DependentUpon>Special Note.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpecialIssues.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SpecialIssues.Designer.cs">
+      <DependentUpon>SpecialIssues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartPage.Designer.cs">
+      <DependentUpon>StartPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Summery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Summery.Designer.cs">
+      <DependentUpon>Summery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Surgical Consumable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Surgical Consumable.Designer.cs">
+      <DependentUpon>Surgical Consumable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Surgical Gloves.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Surgical Gloves.Designer.cs">
+      <DependentUpon>Surgical Gloves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WeeklyIssues.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WeeklyIssues.Designer.cs">
+      <DependentUpon>WeeklyIssues.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddItem.resx">
+      <DependentUpon>AddItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consumable.resx">
+      <DependentUpon>Consumable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dispensary.resx">
+      <DependentUpon>Dispensary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dressing.resx">
+      <DependentUpon>Dressing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Drugs.resx">
+      <DependentUpon>Drugs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ether Spirit.resx">
+      <DependentUpon>Ether Spirit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IVFluids.resx">
+      <DependentUpon>IVFluids.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IVInjection.resx">
+      <DependentUpon>IVInjection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalPurchases.resx">
+      <DependentUpon>LocalPurchases.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OralIssues.resx">
+      <DependentUpon>OralIssues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Special Note.resx">
+      <DependentUpon>Special Note.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpecialIssues.resx">
+      <DependentUpon>SpecialIssues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartPage.resx">
+      <DependentUpon>StartPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Summery.resx">
+      <DependentUpon>Summery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Surgical Consumable.resx">
+      <DependentUpon>Surgical Consumable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Surgical Gloves.resx">
+      <DependentUpon>Surgical Gloves.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WeeklyIssues.resx">
+      <DependentUpon>WeeklyIssues.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="HospitalFinalDataSet.xsc">
+      <DependentUpon>HospitalFinalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HospitalFinalDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HospitalFinalDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HospitalFinalDataSet.xss">
+      <DependentUpon>HospitalFinalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HospitalFinalDataSet1.xsc">
+      <DependentUpon>HospitalFinalDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="HospitalFinalDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HospitalFinalDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HospitalFinalDataSet1.xss">
+      <DependentUpon>HospitalFinalDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="HospitalFinalDataSet2.xsc">
+      <DependentUpon>HospitalFinalDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="HospitalFinalDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HospitalFinalDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HospitalFinalDataSet2.xss">
+      <DependentUpon>HospitalFinalDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="HospitalFinalDataSet3.xsc">
+      <DependentUpon>HospitalFinalDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="HospitalFinalDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HospitalFinalDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HospitalFinalDataSet3.xss">
+      <DependentUpon>HospitalFinalDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Emblem_of_Sri_Lanka.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\650x350_medicine_to_treat_constipation_ref_guide.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-page-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treatment-plan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pill %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_17_-_Harry_Potter_-_Outline_-_Potion_Bottle_2730129.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hand-with-pen %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\health-data %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-page1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\triangular-bandage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_16_-_Harry_Potter_-_Outline_-_Potion_Bottle_2730128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Hand_1021018.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ambulance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_18_-_Harry_Potter_-_Outline_-_Potion_Bottle_2730130.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\90357_cool-blue-backgrounds-hd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\solid-color-wallpaper-21965-22518-hd-wallpapers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5596195_orig.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gold-fabric-cloth-background-texture_49683-3812.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gold-fabric-cloth-background-texture_49683-38121.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%292.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG-20200113-WA0006.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG-20200113-WA0001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG-20200113-WA0008.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG-20200113-WA0010.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG-20200113-WA0012.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG-20200113-WA0007.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG-20200113-WA0009.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG-20200113-WA0011.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
